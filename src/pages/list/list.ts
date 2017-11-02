@@ -2,6 +2,9 @@ import { IonicPage } from 'ionic-angular/navigation/ionic-page';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+/**
+ * List Page with a list of items
+ */
 @IonicPage()
 @Component({
   selector: 'page-list',
@@ -12,6 +15,10 @@ export class ListPage {
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
 
+  /**
+   * @param  {NavController} navCtrl Navigation Controller
+   * @param  {NavParams} navParams Navigation Parameter
+   */
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
@@ -30,7 +37,12 @@ export class ListPage {
     }
   }
 
-  itemTapped(event, item) {
+  /**
+   * Navigates to a new ListPage
+   * @param  {any} event
+   * @param  {any} item
+   */
+  itemTapped(event: any, item: any) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push('ListPage', {
       item: item

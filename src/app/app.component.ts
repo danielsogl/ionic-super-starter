@@ -3,6 +3,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Nav, Platform } from 'ionic-angular';
 
+/**
+ * The app entry component
+ */
 @Component({
   templateUrl: 'app.html'
 })
@@ -13,6 +16,11 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
+  /**
+   * @param  {Platform} platform Ionic Platform
+   * @param  {StatusBar} statusBar Cordova Statusbar
+   * @param  {SplashScreen} splashScreen Cordova Splash-Screen
+   */
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
@@ -24,6 +32,9 @@ export class MyApp {
 
   }
 
+  /**
+   * Initializes the app
+   */
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -33,7 +44,11 @@ export class MyApp {
     });
   }
 
-  openPage(page) {
+  /**
+   * Open a page from the menu
+   * @param  {any} page
+   */
+  openPage(page: any) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
