@@ -43,7 +43,7 @@
     "@compodoc/compodoc": "^1.0.1",
     "@ionic/app-scripts": "^3.0.1",
     "@types/jest": "^21.1.4",
-    "ionic-mocks": "^1.0.3",
+    "ionic-mocks": "git+https://github.com/danielsogl/ionic-mocks.git",
     "jest": "^21.2.1",
     "jest-preset-angular": "^4.0.1",
     "typescript": "2.3.4",
