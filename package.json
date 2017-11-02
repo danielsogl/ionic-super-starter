@@ -29,9 +29,9 @@
     "@angular/http": "4.4.4",
     "@angular/platform-browser": "4.4.4",
     "@angular/platform-browser-dynamic": "4.4.4",
-    "@ionic-native/core": "4.3.2",
-    "@ionic-native/splash-screen": "4.3.2",
-    "@ionic-native/status-bar": "4.3.2",
+    "@ionic-native/core": "^4.3.3",
+    "@ionic-native/splash-screen": "^4.3.3",
+    "@ionic-native/status-bar": "^4.3.3",
     "@ionic/storage": "2.0.1",
     "ionic-angular": "3.8.0",
     "ionicons": "3.0.0",
@@ -63,7 +63,9 @@
   "jest": {
     "preset": "jest-preset-angular",
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
-    "transformIgnorePatterns": ["node_modules/(?!@ngrx|@ionic-native|@ionic)"],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx|@ionic-native|@ionic)"
+    ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/e2e/"
     ],
@@ -75,8 +77,16 @@
       "!**/*main.{ts}",
       "!**/node_modules/**"
     ],
-    "moduleFileExtensions": ["ts", "js", "json"],
-    "coverageReporters": ["json", "lcov", "text"],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ],
     "coverageDirectory": "./public/coverage"
   }
 }
