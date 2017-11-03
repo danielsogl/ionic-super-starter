@@ -3,14 +3,13 @@
   "baseref": "9ae58ee0e10a42c6b8b0729bff818dac9c249d7b",
   "packageJson": {
     "scripts": {
-      "docs":
-        "./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super - Documentation\"",
+      "docs":"./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super - Documentation\"",
       "test": "jest",
       "test:watch": "jest --watch",
       "test:ci": "jest --runInBand",
       "test:coverage": "jest --coverage",
       "e2e": "npm run e2e-update && npm run e2e-test",
-      "e2e-test": "protractor ./test-config/protractor.conf.js",
+      "e2e-test": "protractor ./protractor.conf.js",
       "e2e-update": "webdriver-manager update --standalone false --gecko false"
     },
     "devDependencies": {
