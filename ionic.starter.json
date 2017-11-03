@@ -2,59 +2,54 @@
   "name": "Ionic Super Starter",
   "baseref": "9ae58ee0e10a42c6b8b0729bff818dac9c249d7b",
   "packageJson": {
-    "name": "Ionic Super Starter",
-    "baseref": "9ae58ee0e10a42c6b8b0729bff818dac9c249d7b",
-    "packageJson": {
-      "scripts": {
-        "docs":
-          "./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super - Documentation\"",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:ci": "jest --runInBand",
-        "test:coverage": "jest --coverage",
-        "e2e": "npm run e2e-update && npm run e2e-test",
-        "e2e-test": "protractor ./test-config/protractor.conf.js",
-        "e2e-update":
-          "webdriver-manager update --standalone false --gecko false"
-      },
-      "devDependencies": {
-        "@angular/cli": "1.4.8",
-        "@compodoc/compodoc": "^1.0.1",
-        "@types/jasmine": "^2.5.41",
-        "@types/jest": "^21.1.4",
-        "@types/node": "^8.0.45",
-        "angular2-template-loader": "^0.6.2",
-        "html-loader": "^0.5.1",
-        "ionic-mocks-jest": "^1.0.3",
-        "istanbul-instrumenter-loader": "^3.0.0",
-        "jasmine": "^2.5.3",
-        "jasmine-spec-reporter": "^4.1.0",
-        "jest": "^21.2.1",
-        "jest-preset-angular": "^4.0.1",
-        "null-loader": "^0.1.1",
-        "protractor": "^5.1.1",
-        "ts-loader": "^3.0.3",
-        "ts-node": "^3.0.2"
-      },
-      "jest": {
-        "preset": "jest-preset-angular",
-        "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
-        "transformIgnorePatterns": [
-          "node_modules/(?!@ngrx|@ionic-native|@ionic)"
-        ],
-        "coveragePathIgnorePatterns": ["<rootDir>/e2e/"],
-        "collectCoverageFrom": [
-          "**/*.{ts}",
-          "!**/*d.{ts}",
-          "!**/*interface.{ts}",
-          "!**/*module.{ts}",
-          "!**/*main.{ts}",
-          "!**/node_modules/**"
-        ],
-        "moduleFileExtensions": ["ts", "js", "json"],
-        "coverageReporters": ["json", "lcov", "text"],
-        "coverageDirectory": "./public/coverage"
-      }
+    "scripts": {
+      "docs":
+        "./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super - Documentation\"",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:ci": "jest --runInBand",
+      "test:coverage": "jest --coverage",
+      "e2e": "npm run e2e-update && npm run e2e-test",
+      "e2e-test": "protractor ./test-config/protractor.conf.js",
+      "e2e-update": "webdriver-manager update --standalone false --gecko false"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.4.8",
+      "@compodoc/compodoc": "^1.0.1",
+      "@types/jasmine": "^2.5.41",
+      "@types/jest": "^21.1.4",
+      "@types/node": "^8.0.45",
+      "angular2-template-loader": "^0.6.2",
+      "html-loader": "^0.5.1",
+      "ionic-mocks-jest": "^1.0.3",
+      "istanbul-instrumenter-loader": "^3.0.0",
+      "jasmine": "^2.5.3",
+      "jasmine-spec-reporter": "^4.1.0",
+      "jest": "^21.2.1",
+      "jest-preset-angular": "^4.0.1",
+      "null-loader": "^0.1.1",
+      "protractor": "^5.1.1",
+      "ts-loader": "^3.0.3",
+      "ts-node": "^3.0.2"
+    },
+    "jest": {
+      "preset": "jest-preset-angular",
+      "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
+      "transformIgnorePatterns": [
+        "node_modules/(?!@ngrx|@ionic-native|@ionic)"
+      ],
+      "coveragePathIgnorePatterns": ["<rootDir>/e2e/"],
+      "collectCoverageFrom": [
+        "**/*.{ts}",
+        "!**/*d.{ts}",
+        "!**/*interface.{ts}",
+        "!**/*module.{ts}",
+        "!**/*main.{ts}",
+        "!**/node_modules/**"
+      ],
+      "moduleFileExtensions": ["ts", "js", "json"],
+      "coverageReporters": ["json", "lcov", "text"],
+      "coverageDirectory": "./public/coverage"
     }
   }
 }
