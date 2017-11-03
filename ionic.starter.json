@@ -1,5 +1,4 @@
 {
   "name": "Ionic Super Starter",
-  "baseref": "9ae58ee0e10a42c6b8b0729bff818dac9c249d7b",
-  "packageJson": ["package.json"]
+  "baseref": "9ae58ee0e10a42c6b8b0729bff818dac9c249d7b"
 }
