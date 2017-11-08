@@ -1,6 +1,6 @@
 {
   "name": "Ionic Super Starter",
-  "baseref": "9b3d060bca61d513450c330de84cb9b468cf7387",
+  "baseref": "4fea50ad6696726711cf79f979e46ffaf10cb23f",
   "packageJson": {
     "scripts": {
       "docs":"./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super Starter - Documentation\"",
@@ -13,8 +13,8 @@
       "e2e-update": "webdriver-manager update --standalone false --gecko false"
     },
     "devDependencies": {
-      "@angular/cli": "1.4.8",
-      "@compodoc/compodoc": "^1.0.1",
+      "@angular/cli": "1.5.0",
+      "@compodoc/compodoc": "^1.0.4",
       "@types/jasmine": "^2.5.41",
       "@types/jest": "^21.1.4",
       "@types/node": "^8.0.45",
