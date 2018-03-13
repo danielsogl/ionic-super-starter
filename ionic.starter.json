@@ -1,6 +1,6 @@
 {
   "name": "Ionic Super Starter",
-  "baseref": "b2badc906c49d235df9c27ea68c3c5b01c2b7545",
+  "baseref": "master",
   "packageJson": {
     "scripts": {
       "docs":"./node_modules/.bin/compodoc -d ./public/docs/ -p ./tsconfig.json -n \"Ionic Super Starter - Documentation\"",
